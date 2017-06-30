@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>change picture</title>
+      <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+		  var question = 0, a=1, b=2, c=3, d=4;
+		  function loadimages() {
+          images[1] = "th.jpg";
+          images[2] = "th (2).jpg";
+		  images[3] = "th (3).jpg";
+		  images[4] = "th (4).jpg";
+		  
+		  document.getElementById("img").src = images[question];
+		  document.getElementById("A").src = images[1];
+		  document.getElementById("B").src = images[2];
+		  document.getElementById("C").src = images[3];
+		  document.getElementById("D").src = images[4];
+		  }
+		  function iscorrect(name) {
+		  if(name==1){
+			window.alert("correct");
+		  }
+		  else{
+		  window.alert("incorrect");
+		  }
+		  }
+
+          var images = [], x = -1;
+
+		  
+		  
+      </script>
+   </head>
+
+<style>
+.button{
+	cursor:pointer;
+}
+
+</style>
+   <body onload = "loadimages()">
+       <img id="img" src=""/>
+
+	   	   <body>
+		   which is a monkey??
+	   	   <body>
+       <button type="button" onclick="iscorrect(1)">A</button>
+	   <img class="button" onclick="iscorrect(1)" id="A" src="image1.jpg"/>
+	   <button type="button" onclick="iscorrect(2)">B</button>
+	   <img class="button" onclick="iscorrect(2)" id="B" src="image2.jpg"/> 
+	   <button type="button" type="button" onclick="iscorrect(3)">C</button>
+	   <img class="button" onclick="iscorrect(3)" id="C" src="image3.jpg"/>
+	   <img class="button" onclick="iscorrect(4)" id="D" src="image4.jpg"/>
+   </body>
+</html>
