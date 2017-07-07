@@ -15,9 +15,9 @@
     <script src="what_reaction.js"></script>
         <div class="container">
             <div class="jumbotron">
-                <h1>What animal is this?</h1>
+                <h1 id="titleText"></h1>
             </div>
-            <img src="https://media.mnn.com/assets/images/2017/01/Sloth-Hanging-Tree-Branch.jpg.638x0_q80_crop-smart.jpg">
+            <img id="image">
             <button id="choice0" type="button" onclick="choiceIsSelected(0)" class="btn btn-lrg btn-default">LLama</button>
             <button id="choice1" type="button" onclick="choiceIsSelected(1)" class="btn btn-lrg btn-default">Monkey</button>
             <button id="choice2" type="button" onclick="choiceIsSelected(2)" class="btn btn-lrg btn-default">Giraffe</button>
@@ -25,4 +25,10 @@
             <p id="result"></p>
         </div>
     </body>
+    
+    <!-- ALl the asset loading happens below this point -->
+    
+    <script>loadTitleText("What animal is this?");</script>
+    <script>loadImage("https://pbs.twimg.com/profile_images/269279233/llama270977_smiling_llama_400x400.jpg");</script>
+
 </html>
