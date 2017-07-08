@@ -1,6 +1,6 @@
 body {
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+   text-align: center;
 }
 
 .theme-dropdown .dropdown-menu {
@@ -15,4 +15,30 @@ body {
 
 .theme-showcase .navbar .container {
   width: auto;
+}
+
+.choice {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.glyphicon-lg {
+    font-size: 4em;
+}
+
+.choice-group {
+    width: 50%;
+}
+
+#result-div {
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: flex-end;
+}
+
+#result {
+    flex-basis: 100%
 }

@@ -3,7 +3,6 @@ function deleteModeSelect(mode) {
     return;
 }
 
-function createButton(){
-    var button = document.createElement("button");
-    document.getElementById("page").appendChild(button);
+function addStartImage(){
+    document.getElementById("start").src("/images/cat.jpg");
 }

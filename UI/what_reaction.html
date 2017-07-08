@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<head>
-    <title>Glucose Cascades!</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-</head>
 <html>
+    <head>
+        <title>Glucose Cascades!</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/theme.css">
+    </head>
     <body>
     <script src="what_reaction.js"></script>
         <div class="container">
-            <div class="jumbotron">
-                <h1 id="titleText"></h1>
+            <h1 id="titleText"></h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="center-block" id="image">
+                </div>
             </div>
-            <img id="image">
-            <button id="choice0" type="button" onclick="choiceIsSelected(0)" class="btn btn-lrg btn-default">LLama</button>
-            <button id="choice1" type="button" onclick="choiceIsSelected(1)" class="btn btn-lrg btn-default">Monkey</button>
-            <button id="choice2" type="button" onclick="choiceIsSelected(2)" class="btn btn-lrg btn-default">Giraffe</button>
-            <button id="choice3" type="button" onclick="choiceIsSelected(3)" class="btn btn-lrg btn-default">Lion</button>
-            <p id="result"></p>
+            <div class="row btn-group-vertical choice-group" role="group" aria-label="...">
+                <button id="choice0" type="button" onclick="choiceIsSelected(0)" class="btn btn-lrg btn-default center-block">LLama</button>
+                <button id="choice1" type="button" onclick="choiceIsSelected(1)" class="btn btn-lrg btn-default center-block">Monkey</button>
+                <button id="choice2" type="button" onclick="choiceIsSelected(2)" class="btn btn-lrg btn-default center-block">Giraffe</button>
+                <button id="choice3" type="button" onclick="choiceIsSelected(3)" class="btn btn-lrg btn-default center-block">Lion</button>
+            </div>
+            <div id="result-div" class="row center-block">
+                <p id="result"></p>
+            </div>
         </div>
     </body>
-    
+
     <!-- ALl the asset loading happens below this point -->
 
     <script>loadTitleText("What animal is this?");</script>
