@@ -79,7 +79,7 @@
       </div>
       <div id="mode-select">
           <div class="row">
-              <button type="button" class="btn btn-lrg btn-default" onclick="deleteModeSelect(0)">Glucose</button>
+              <button type="button" class="btn btn-lrg btn-default" onclick="addStartImage()">Glucose</button>
           </div>
           <div class="row">
               <button type="button" class="btn btn-lrg btn-primary" onclick="deleteModeSelect(1)">Krbes</button>
@@ -87,6 +87,16 @@
           <div class="row">
               <button type="button" class="btn btn-lrg btn-success" onclick="deleteModeSelect(2)">Glycogen</button>
           </div>
+      </div>
+      <div id="question">
+          <p>What is the product?</p>
+          <img id="start">
+          <img id="arrow" src="/images/arrow.png">
+          <img id="question_mark" src="/images/question_mark.png">
+          <button id="choice1"></button>
+          <button id="choice2"></button>
+          <button id="choice3"></button>
+          <button id="choice4"></button>
       </div>
     </div>
 
