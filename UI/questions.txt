@@ -1,0 +1,15 @@
+$1
+Name_the_molecule
+Adenine.jpg
+Glucose
+Pyridimene
+Adenine
+ATP
+
+$2
+Name_the_molecule
+Tyrosine.jpg
+Glucose
+Tyrposine *
+ADP
+Fructose
