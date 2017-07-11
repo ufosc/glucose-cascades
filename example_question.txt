@@ -1,0 +1,17 @@
+disregard the // they are comments to help. They will not be in the actual txt
+
+$1 // $ indicates the start of a question. The 1 is just the question number in case we devise a use for it later
+Name_the_molecule // indictaes type of question for the page layout
+Adenine.jpg	// the picture to be loaded as the question
+Glucose  // wrong answer
+Pyridimene // wrong answer
+Adenine *    // * symobl marks it as correct answer
+ATP  // wrong answer
+
+$2
+Name_the_molecule 
+Tyrosine.jpg
+Glucose 
+Tyrposine *
+ADP
+Fructose 
