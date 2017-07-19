@@ -42,3 +42,11 @@ body {
 #result {
     flex-basis: 100%
 }
+
+.hidden {
+    display: none;
+}
+
+#reaction_arrow{
+    width:25%;
+}
