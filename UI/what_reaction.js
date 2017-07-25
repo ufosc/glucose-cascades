@@ -61,6 +61,7 @@ function getData() {
 
 function nextQuestion() {
     "use strict";
+    document.getElementById("result-div").classList.add('hidden');
     data.then(function (data) {
         //parse the next question
         var questionNumber = Math.floor( (Math.random() * (data.length / 8) ) );
@@ -70,7 +71,7 @@ function nextQuestion() {
                         data[( questionNumber * 8 ) + 5], data[( questionNumber * 8 ) + 6] ];
         //save the correct answer choice
         var correctChoice = choices[0];
-        //shuffle the array of choices using a Fisher-Yates shauffle
+        //shuffle the array of choices using a Fisher-Yates shuffle
         for(var i = choices.length-1; i>=1; i--){
             var j = Math.floor(Math.random() * (i+1));
             var temp = choices[i];
@@ -106,6 +107,7 @@ function nextQuestion() {
 }
 
 function correctChoiceIsSelected() {
+    document.getElementById("result-div").classList.remove('hidden');
     document.getElementById("result-div").classList.remove('alert-danger');
     document.getElementById("result-div").classList.add('alert');
     document.getElementById("result-div").classList.add('alert-success');
@@ -122,6 +124,7 @@ function correctChoiceIsSelected() {
 }
 
 function incorrectChoiceIsSelected() {
+    document.getElementById("result-div").classList.remove('hidden');
     document.getElementById("result-div").classList.remove('alert-success');
     document.getElementById("result-div").classList.add('alert');
     document.getElementById("result-div").classList.add('alert-danger');
